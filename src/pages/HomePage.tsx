@@ -2,7 +2,7 @@ import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
-import { PremiumBackground } from '../components/ui/PremiumBackground'
+import { HeroBackground } from '../components/ui/HeroBackground'
 import { LogosBanner } from '../components/ui/LogosBanner'
 import { Testimonials } from '../components/sections/Testimonials'
 import { PartnerBadges } from '../components/sections/PartnerBadges'
@@ -42,15 +42,15 @@ function Section({ children, className = "" }: { children: React.ReactNode, clas
 export default function HomePage() {
     return (
         <main className="relative">
-            {/* Premium atmospheric background */}
-            <PremiumBackground />
-
             {/* ====================================
                 HERO SECTION
                 Ciridae-inspired: Large type, intentional space
                 ==================================== */}
             <section className="min-h-screen flex flex-col justify-center relative">
-                <div className="container">
+                {/* Animated hero background with datacenter transformation visual */}
+                <HeroBackground />
+
+                <div className="container relative z-10">
                     <div className="max-w-5xl">
                         {/* Label */}
                         <motion.p
