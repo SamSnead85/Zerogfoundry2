@@ -8,6 +8,9 @@ import CareersPage from './pages/CareersPage'
 import VenturesPage from './pages/VenturesPage'
 import ApproachPage from './pages/ApproachPage'
 import InsightsPage from './pages/InsightsPage'
+import ContactPage from './pages/ContactPage'
+import WorkPage from './pages/WorkPage'
+import AboutPage from './pages/AboutPage'
 
 
 function App() {
@@ -40,6 +43,9 @@ function App() {
             <Route path="/ventures" element={<VenturesPage />} />
             <Route path="/approach" element={<ApproachPage />} />
             <Route path="/insights" element={<InsightsPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/work" element={<WorkPage />} />
+            <Route path="/about" element={<AboutPage />} />
           </Routes>
         </main>
         <Footer />
@@ -49,3 +55,4 @@ function App() {
 }
 
 export default App
+
