@@ -45,20 +45,17 @@ export default function Navigation() {
                 <nav className="container">
                     <div className="flex items-center justify-between h-12">
                         {/* Logo */}
-                        <Link to="/" className="font-medium tracking-tight">
+                        <Link to="/" className="heading-display text-lg font-semibold tracking-tight">
                             Zero G Foundry
                         </Link>
 
                         {/* Desktop Navigation */}
-                        <div className="hidden lg:flex items-center gap-8">
+                        <div className="hidden lg:flex items-center gap-10">
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.name}
                                     to={link.href}
-                                    className={`text-sm transition-colors duration-200 ${location.pathname === link.href
-                                            ? 'text-[var(--color-foreground)]'
-                                            : 'text-[var(--color-muted)] hover:text-[var(--color-foreground)]'
-                                        }`}
+                                    className={`nav-link ${location.pathname === link.href ? 'nav-link-active' : ''}`}
                                 >
                                     {link.name}
                                 </Link>
