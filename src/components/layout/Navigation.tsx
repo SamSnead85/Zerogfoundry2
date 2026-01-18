@@ -45,8 +45,9 @@ export default function Navigation() {
                 <nav className="container">
                     <div className="flex items-center justify-between h-12">
                         {/* Logo */}
-                        <Link to="/" className="heading-display text-lg font-semibold tracking-tight">
-                            Zero G Foundry
+                        <Link to="/" className="flex items-center gap-2">
+                            <img src="/logo.png" alt="Zero G Foundry" className="h-8 w-8" />
+                            <span className="heading-display text-lg font-semibold tracking-tight">Zero G Foundry</span>
                         </Link>
 
                         {/* Desktop Navigation */}
