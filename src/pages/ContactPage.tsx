@@ -263,14 +263,14 @@ export default function ContactPage() {
                             </div>
 
                             <div>
-                                <h3 className="text-lg font-semibold mb-6">Location</h3>
+                                <h3 className="text-lg font-semibold mb-6">Offices</h3>
                                 <div className="flex items-start gap-4 p-4 rounded-lg border border-[var(--color-border)]">
                                     <div className="w-10 h-10 rounded-full bg-[var(--color-surface)] flex items-center justify-center">
                                         <MapPin className="w-5 h-5 text-[var(--color-muted)]" />
                                     </div>
                                     <div>
                                         <p className="text-sm text-[var(--color-muted)]">Headquarters</p>
-                                        <p className="font-medium">Tampa, Florida</p>
+                                        <p className="font-medium">New York · San Francisco · Florida</p>
                                         <p className="text-sm text-[var(--color-muted)]">Serving enterprises globally</p>
                                     </div>
                                 </div>
