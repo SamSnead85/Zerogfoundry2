@@ -2,7 +2,7 @@ import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
-import { HeroBackground } from '../components/ui/HeroBackground'
+import { CinematicHeroBackground } from '../components/ui/CinematicHeroBackground'
 import { LogosBanner } from '../components/ui/LogosBanner'
 import { Testimonials } from '../components/sections/Testimonials'
 import { PartnerBadges } from '../components/sections/PartnerBadges'
@@ -47,8 +47,8 @@ export default function HomePage() {
                 Ciridae-inspired: Large type, intentional space
                 ==================================== */}
             <section className="min-h-screen flex flex-col justify-center relative">
-                {/* Animated hero background with datacenter transformation visual */}
-                <HeroBackground />
+                {/* Cinematic hero background - film poster aesthetic */}
+                <CinematicHeroBackground />
 
                 <div className="container relative z-10">
                     <div className="max-w-4xl mx-auto text-center">

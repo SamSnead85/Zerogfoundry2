@@ -82,6 +82,60 @@ export default function ApproachPage() {
                 </div>
             </section>
 
+            {/* Legacy Transformation Visual */}
+            <section className="py-0 relative">
+                <div className="relative h-[400px] md:h-[500px] overflow-hidden">
+                    {/* The datacenter visual */}
+                    <div
+                        className="absolute inset-0 bg-cover bg-center"
+                        style={{
+                            backgroundImage: 'url(/hero-bg.png)',
+                            filter: 'brightness(0.35) saturate(0.8)',
+                        }}
+                    />
+                    {/* Gradient overlay for text */}
+                    <div
+                        className="absolute inset-0"
+                        style={{
+                            background: 'linear-gradient(to right, rgba(5,5,5,0.9) 0%, rgba(5,5,5,0.5) 50%, rgba(5,5,5,0.9) 100%)',
+                        }}
+                    />
+                    {/* Content */}
+                    <div className="relative container h-full flex items-center px-6">
+                        <motion.div
+                            initial={{ opacity: 0, x: -30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8 }}
+                            className="max-w-xl"
+                        >
+                            <p className="text-xs font-mono tracking-widest text-[var(--color-accent)] mb-4">THE CHALLENGE</p>
+                            <h2 className="heading-display text-3xl md:text-4xl mb-4">
+                                Legacy systems weren't built for AI.
+                            </h2>
+                            <p className="text-[var(--color-muted)] mb-6">
+                                Decades of technical debt, tangled integrations, and outdated architectures
+                                create gravity that pulls innovation back down. We specialize in breaking free.
+                            </p>
+                            <div className="flex gap-8 text-center">
+                                <div>
+                                    <p className="heading-display text-3xl text-[var(--color-foreground)]">60%</p>
+                                    <p className="text-xs text-[var(--color-muted)]">IT budget on maintenance</p>
+                                </div>
+                                <div>
+                                    <p className="heading-display text-3xl text-[var(--color-foreground)]">18mo</p>
+                                    <p className="text-xs text-[var(--color-muted)]">avg. modernization timeline</p>
+                                </div>
+                                <div>
+                                    <p className="heading-display text-3xl text-[var(--color-foreground)]">70%</p>
+                                    <p className="text-xs text-[var(--color-muted)]">projects fail to deliver</p>
+                                </div>
+                            </div>
+                        </motion.div>
+                    </div>
+                </div>
+            </section>
+
             {/* Capabilities */}
             <section id="solutions" className="py-24">
                 <div className="container px-6">
