@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async'
 import Navigation from './components/layout/Navigation'
 import Footer from './components/layout/Footer'
 import CinematicBackground from './components/ui/CinematicBackground'
+import { ScrollProgress } from './components/ui/ScrollProgress'
 import HomePage from './pages/HomePage'
 import CareersPage from './pages/CareersPage'
 import VenturesPage from './pages/VenturesPage'
@@ -34,6 +35,7 @@ function App() {
         </script>
       </Helmet>
       <CinematicBackground />
+      <ScrollProgress />
       <div className="min-h-screen flex flex-col relative z-10">
         <Navigation />
         <main className="flex-1">

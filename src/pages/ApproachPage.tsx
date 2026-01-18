@@ -215,7 +215,7 @@ export default function ApproachPage() {
                     </motion.div>
 
                     <div className="text-center mt-12">
-                        <Link to="/ventures" className="btn-accent inline-flex items-center gap-2">
+                        <Link to="/contact" className="btn-accent inline-flex items-center gap-2">
                             Start a Conversation
                             <ArrowRight className="w-4 h-4" />
                         </Link>

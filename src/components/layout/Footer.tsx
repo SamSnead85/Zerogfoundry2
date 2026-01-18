@@ -2,10 +2,11 @@ import { Link } from 'react-router-dom'
 
 const footerLinks = [
     {
-        title: 'Work',
+        title: 'Services',
         links: [
             { name: 'Case Studies', href: '/work' },
-            { name: 'Industries', href: '/industries' },
+            { name: 'Our Approach', href: '/approach' },
+            { name: 'Ventures', href: '/ventures' },
         ]
     },
     {
@@ -20,7 +21,7 @@ const footerLinks = [
         title: 'Resources',
         links: [
             { name: 'Insights', href: '/insights' },
-            { name: 'Newsletter', href: '/newsletter' },
+            { name: 'Newsletter', href: '/insights' },
         ]
     }
 ]
