@@ -269,7 +269,7 @@ body {
 .gradient-blob-1 {
   width: 800px;
   height: 800px;
-  background: radial-gradient(circle, rgba(59, 130, 246, 0.7) 0%, rgba(59, 130, 246, 0.3) 40%, transparent 70%);
+  background: radial-gradient(circle, rgba(217, 158, 79, 0.5) 0%, rgba(184, 115, 51, 0.25) 40%, transparent 70%);
   top: -10%;
   left: 5%;
   animation: floatBlob1 20s ease-in-out infinite;
@@ -278,7 +278,7 @@ body {
 .gradient-blob-2 {
   width: 700px;
   height: 700px;
-  background: radial-gradient(circle, rgba(139, 92, 246, 0.6) 0%, rgba(139, 92, 246, 0.25) 40%, transparent 70%);
+  background: radial-gradient(circle, rgba(0, 96, 255, 0.5) 0%, rgba(0, 60, 180, 0.25) 40%, transparent 70%);
   top: 40%;
   right: 5%;
   animation: floatBlob2 25s ease-in-out infinite;
@@ -287,7 +287,7 @@ body {
 .gradient-blob-3 {
   width: 750px;
   height: 750px;
-  background: radial-gradient(circle, rgba(6, 182, 212, 0.5) 0%, rgba(6, 182, 212, 0.2) 40%, transparent 70%);
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.4) 0%, rgba(6, 150, 180, 0.2) 40%, transparent 70%);
   bottom: 0%;
   left: 25%;
   animation: floatBlob3 22s ease-in-out infinite;
