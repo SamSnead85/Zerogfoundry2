@@ -51,57 +51,58 @@ export default function HomePage() {
                 <HeroBackground />
 
                 <div className="container relative z-10">
-                    <div className="max-w-5xl">
+                    <div className="max-w-4xl mx-auto text-center">
                         {/* Label */}
                         <motion.p
                             variants={fadeUp}
                             initial="hidden"
                             animate="visible"
                             transition={{ ...transition, delay: 0.2 }}
-                            className="text-mono mb-8"
+                            className="text-mono mb-6"
                         >
-                            Enterprise AI Consulting
+                            Legacy Modernization & AI Transformation
                         </motion.p>
 
-                        {/* Main headline */}
+                        {/* Main headline - refined sizing */}
                         <motion.h1
                             variants={fadeUp}
                             initial="hidden"
                             animate="visible"
                             transition={{ ...transition, delay: 0.4 }}
-                            className="heading-display heading-xl mb-8"
+                            className="heading-display heading-xl mb-6"
                         >
-                            We engineer intelligence
+                            Escape the gravity
                             <br />
-                            <span className="text-[var(--color-muted)]">that transforms enterprises.</span>
+                            <span className="text-[var(--color-muted)]">of legacy systems.</span>
                         </motion.h1>
 
-                        {/* Subtext */}
+                        {/* Subtext - clearer value proposition */}
                         <motion.p
                             variants={fadeUp}
                             initial="hidden"
                             animate="visible"
                             transition={{ ...transition, delay: 0.6 }}
-                            className="text-body max-w-xl mb-12"
+                            className="text-body max-w-2xl mx-auto mb-10"
                         >
-                            From strategy to deployment. We build AI systems that deliver
-                            measurable outcomes for Fortune 500 organizations.
+                            We bring the approach, tools, and infrastructure to transform your legacy
+                            applications into cloud-native, AI-native systems. From forensic discovery
+                            to production deployment—transformation in a box.
                         </motion.p>
 
-                        {/* CTAs */}
+                        {/* CTAs - centered */}
                         <motion.div
                             variants={fadeUp}
                             initial="hidden"
                             animate="visible"
                             transition={{ ...transition, delay: 0.8 }}
-                            className="flex flex-wrap gap-4"
+                            className="flex flex-wrap justify-center gap-4"
                         >
                             <Link to="/contact" className="btn btn-primary">
-                                Start a conversation
+                                Start your transformation
                                 <ArrowRight className="w-4 h-4" />
                             </Link>
                             <Link to="/approach" className="btn btn-ghost">
-                                Our approach
+                                See our approach
                             </Link>
                         </motion.div>
                     </div>

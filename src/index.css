@@ -62,7 +62,11 @@ body {
 }
 
 .heading-xl {
-  font-size: clamp(3rem, 8vw, 7rem);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.heading-hero {
+  font-size: clamp(2.75rem, 6vw, 5rem);
 }
 
 .heading-lg {

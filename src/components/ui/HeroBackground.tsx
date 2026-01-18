@@ -19,25 +19,25 @@ export function HeroBackground() {
                     className="absolute inset-0 bg-cover bg-center"
                     style={{
                         backgroundImage: 'url(/hero-bg.png)',
-                        filter: 'brightness(0.3) saturate(0.8)',
+                        filter: 'brightness(0.5) saturate(0.9)',
                     }}
                 />
             </motion.div>
 
             {/* Subtle floating particle effect */}
             <div className="absolute inset-0">
-                {[...Array(15)].map((_, i) => (
+                {[...Array(12)].map((_, i) => (
                     <motion.div
                         key={i}
                         className="absolute w-1 h-1 rounded-full bg-[var(--color-accent)]"
                         style={{
-                            left: `${10 + (i * 6)}%`,
+                            left: `${10 + (i * 7)}%`,
                             bottom: `${20 + (i % 5) * 15}%`,
-                            opacity: 0.3 + (i % 3) * 0.1,
+                            opacity: 0.4 + (i % 3) * 0.1,
                         }}
                         animate={{
                             y: [0, -100 - (i * 20), -200 - (i * 30)],
-                            opacity: [0.4, 0.6, 0],
+                            opacity: [0.5, 0.7, 0],
                             scale: [1, 1.5, 0.5],
                         }}
                         transition={{
@@ -52,12 +52,12 @@ export function HeroBackground() {
 
             {/* Subtle light beam glow animation */}
             <motion.div
-                className="absolute left-1/2 bottom-0 w-32 h-full -translate-x-1/2"
+                className="absolute left-1/2 bottom-0 w-40 h-full -translate-x-1/2"
                 style={{
-                    background: 'linear-gradient(to top, transparent 0%, rgba(100, 180, 255, 0.05) 30%, rgba(100, 180, 255, 0.1) 50%, transparent 70%)',
+                    background: 'linear-gradient(to top, transparent 0%, rgba(100, 180, 255, 0.08) 30%, rgba(100, 180, 255, 0.15) 50%, transparent 70%)',
                 }}
                 animate={{
-                    opacity: [0.3, 0.6, 0.3],
+                    opacity: [0.4, 0.7, 0.4],
                 }}
                 transition={{
                     duration: 4,
@@ -66,11 +66,11 @@ export function HeroBackground() {
                 }}
             />
 
-            {/* Gradient overlay to ensure text readability */}
+            {/* Lighter gradient overlay for text readability */}
             <div
                 className="absolute inset-0"
                 style={{
-                    background: 'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.8) 100%)',
+                    background: 'linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.6) 100%)',
                 }}
             />
 
@@ -78,7 +78,7 @@ export function HeroBackground() {
             <div
                 className="absolute inset-0"
                 style={{
-                    background: 'radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.4) 100%)',
+                    background: 'radial-gradient(ellipse at center, transparent 50%, rgba(0,0,0,0.3) 100%)',
                 }}
             />
         </div>
