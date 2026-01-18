@@ -18,7 +18,7 @@ interface Connection {
 
 export default function NeuralNetwork() {
     const canvasRef = useRef<HTMLCanvasElement>(null)
-    const animationRef = useRef<number>()
+    const animationRef = useRef<number | undefined>(undefined)
     const nodesRef = useRef<Node[]>([])
     const connectionsRef = useRef<Connection[]>([])
     const mouseRef = useRef({ x: 0, y: 0 })
@@ -86,7 +86,7 @@ export default function NeuralNetwork() {
             const time = Date.now() * 0.001
 
             // Update and draw nodes
-            nodesRef.current.forEach((node, i) => {
+            nodesRef.current.forEach((node) => {
                 // Mouse interaction
                 const dx = mouseRef.current.x - node.x
                 const dy = mouseRef.current.y - node.y

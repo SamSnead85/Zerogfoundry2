@@ -1,5 +1,5 @@
 import { motion, useMotionValue, useTransform, useSpring } from 'framer-motion'
-import { useRef, ReactNode } from 'react'
+import { useRef, type ReactNode } from 'react'
 
 interface HolographicCardProps {
     children: ReactNode
