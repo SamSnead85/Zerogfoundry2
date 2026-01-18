@@ -4,22 +4,22 @@ description: How to deploy React/Vite projects to Netlify without build failures
 
 # Netlify Deployment for React/Vite Projects
 
+> [!CAUTION]
+> **React 19 Alert**: Many npm packages (react-helmet-async, some UI libraries) haven't declared React 19 as a peer dependency yet. This causes npm install to fail on Netlify. ALWAYS set `NPM_FLAGS = "--legacy-peer-deps"` in netlify.toml when using React 19.
+
 ## Common Issues & Solutions
 
 ### 1. React 19 Peer Dependency Conflicts
 
 **Problem**: Many npm packages (like `react-helmet-async`) don't yet declare React 19 as a peer dependency, causing `npm install` to fail on Netlify with `ERESOLVE` errors.
 
-**Solution**: Use `--legacy-peer-deps` in your build command.
+**Solution**: Set `NPM_FLAGS` environment variable in netlify.toml:
 
 ```toml
 # netlify.toml
-[build]
-  command = "npm install --legacy-peer-deps && npm run build"
-  publish = "dist"
-
 [build.environment]
   NODE_VERSION = "20"
+  NPM_FLAGS = "--legacy-peer-deps"
 ```
 
 ### 2. TypeScript Build Errors
