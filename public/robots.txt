@@ -1,0 +1,12 @@
+# Zero G Foundry
+# https://zerogfoundry.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://zerogfoundry.com/sitemap.xml
+
+# Disallow admin/internal paths (if any)
+Disallow: /api/
+Disallow: /_

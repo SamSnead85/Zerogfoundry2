@@ -6,6 +6,7 @@ const footerLinks = [
         links: [
             { name: 'Case Studies', href: '/work' },
             { name: 'Our Approach', href: '/approach' },
+            { name: 'ROI Calculator', href: '/roi-calculator' },
             { name: 'Ventures', href: '/ventures' },
         ]
     },

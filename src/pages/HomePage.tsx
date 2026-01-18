@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
 import { PremiumBackground } from '../components/ui/PremiumBackground'
 import { LogosBanner } from '../components/ui/LogosBanner'
+import { Testimonials } from '../components/sections/Testimonials'
+import { PartnerBadges } from '../components/sections/PartnerBadges'
 
 // Animation variants - smooth, not flashy
 const fadeUp = {
@@ -270,6 +272,18 @@ export default function HomePage() {
                 Ciridae-style scrolling companies
                 ==================================== */}
             <LogosBanner />
+
+            {/* ====================================
+                TESTIMONIALS
+                Client success stories
+                ==================================== */}
+            <Testimonials />
+
+            {/* ====================================
+                PARTNER BADGES
+                Technology partnerships
+                ==================================== */}
+            <PartnerBadges />
 
             {/* ====================================
                 CTA SECTION

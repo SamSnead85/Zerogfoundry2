@@ -4,6 +4,9 @@ import Navigation from './components/layout/Navigation'
 import Footer from './components/layout/Footer'
 import CinematicBackground from './components/ui/CinematicBackground'
 import { ScrollProgress } from './components/ui/ScrollProgress'
+import { FloatingContact } from './components/ui/FloatingContact'
+import { BackToTop } from './components/ui/BackToTop'
+import { ExitIntent } from './components/ui/ExitIntent'
 import HomePage from './pages/HomePage'
 import CareersPage from './pages/CareersPage'
 import VenturesPage from './pages/VenturesPage'
@@ -12,6 +15,7 @@ import InsightsPage from './pages/InsightsPage'
 import ContactPage from './pages/ContactPage'
 import WorkPage from './pages/WorkPage'
 import AboutPage from './pages/AboutPage'
+import ROICalculatorPage from './pages/ROICalculatorPage'
 
 
 function App() {
@@ -36,6 +40,9 @@ function App() {
       </Helmet>
       <CinematicBackground />
       <ScrollProgress />
+      <FloatingContact />
+      <BackToTop />
+      <ExitIntent />
       <div className="min-h-screen flex flex-col relative z-10">
         <Navigation />
         <main className="flex-1">
@@ -48,6 +55,7 @@ function App() {
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/work" element={<WorkPage />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/roi-calculator" element={<ROICalculatorPage />} />
           </Routes>
         </main>
         <Footer />
@@ -57,4 +65,3 @@ function App() {
 }
 
 export default App
-
